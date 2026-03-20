@@ -38,7 +38,7 @@ Her bir klasör, ilgili konunun kodlarını ve çıktısını içeren bir yapıd
 ## 📂 Dosya Yapısı
 
 ```text
-├── CSS_Pratikleri/
+├── Css_Pratikleri/
 │   ├── z-index/
 │   ├── Navigation Bar/
 │   ├── Dropdown Menu/
@@ -47,5 +47,7 @@ Her bir klasör, ilgili konunun kodlarını ve çıktısını içeren bir yapıd
 │   ├── Layout ve Grid/
 │   ├── Alert & Buttons/
 │   └── ... (Diğer Bootstrap klasörleri)
+├── Demo/
+│   └── hakkimizda.html
 └── README.md
 
