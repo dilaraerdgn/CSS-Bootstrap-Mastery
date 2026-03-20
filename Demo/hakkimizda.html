@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="page-contact">
+
+<header>
+    <!--
+    <h1 style="color: #fff;">Biz Kimiz?</h1>-->
+    <h3 style="text-align: center;">Bizim Firmanız</h3>
+    <p>Hakkımızda sayfamıza hoş geldiniz.</p>
+</header>
+
+<nav>
+    <a href="index.html" style="color: black;">Anasayfa</a>
+    <a href="hakkimizda.html" style="color: black;">Hakkımızda</a>
+    <a href="https://www.google.com" target="_blank" style="color: black;">Google</a>
+</nav>
+
+<div class="container">
+    <aside>
+        <h2>Yan Menü</h2>
+        <ul>
+            <li>Kuruluş</li>
+            <li>Misyon</li>
+            <li>Vizyon</li>
+        </ul>
+    </aside>
+
+    <main class="grid">
+        <section class="card">
+            <h2>Kuruluşumuz</h2>
+            <h3>Tarihçe</h3>
+            <p>Firmamız 2005 yılında kurulmuştur. Amacımız kaliteli hizmet sunmaktır.</p>
+            <p>Yıllar içinde sektörde güvenilir bir marka haline geldik.</p>
+            <img src="https://www.kartvizit.com.tr/content/pf/temp/L0263-logo-tasarim-firma-ozel-dizayn-cizim-B-renkli-mavi-yesil-turuncu.jpg" alt="Firma Logosu">
+        </section>
+
+        <section class="card">
+            <h2>Misyon & Vizyon</h2>
+            <h3>Misyon</h3>
+            <p>Müşterilerimize en iyi hizmeti sunmak ve sürekli gelişmek.</p>
+            <h3>Vizyon</h3>
+            <p>Global ölçekte tanınan lider bir firma olmak.</p>
+            <ol>
+                <li>Kalite odaklı çalışma</li>
+                <li>Yenilikçi çözümler</li>
+                <li>Müşteri memnuniyeti</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Bize Ulaşın</h2>
+            <form action="#" method="post">
+                <label for="isim">Adınız:</label>
+                <input type="text" id="isim" name="isim" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="sifre">Şifre:</label>
+                <input type="password" id="sifre" name="sifre" required>
+
+                <label for="mesaj">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" rows="4"></textarea>
+
+                <input type="checkbox" id="abonelik" name="abonelik">
+                <label for="abonelik">Bültene abone ol</label>
+
+                <label for="konu">İlgi Alanı:</label>
+                <select id="konu" name="konu">
+                    <option value="genel">Genel</option>
+                    <option value="urun">Ürünler</option>
+                    <option value="destek">Destek</option>
+                </select>
+
+                <button type="submit" class="btn">Gönder</button>
+            </form>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2025 Bizim Firmanız</p>
+</footer>
+
+</body>
+</html>
