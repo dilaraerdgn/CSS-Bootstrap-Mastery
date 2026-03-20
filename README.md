@@ -33,6 +33,8 @@ Her bir klasör, ilgili konunun kodlarını ve çıktısını içeren bir yapıd
 
 ---
 
+*Bu depo, ön yüz (Front-end) geliştirme konusundaki teknik yetkinliğimi ve sürekli öğrenme disiplinimi yansıtmaktadır. Öğrenme sürecimde çalışırken çıkardığım bu notlar yeni başlayanlar için başlangıç ve gelişim kaynağı olacaktır.*
+  
 ## 📂 Dosya Yapısı
 
 ```text
@@ -46,3 +48,4 @@ Her bir klasör, ilgili konunun kodlarını ve çıktısını içeren bir yapıd
 │   ├── Alert & Buttons/
 │   └── ... (Diğer Bootstrap klasörleri)
 └── README.md
+
