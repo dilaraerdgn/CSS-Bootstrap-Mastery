@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        ul{
+            list-style-type: none; /* noktasız*/
+            /*width: 40%;*/
+            width: 100%;/*yatay menü için*/
+            background-color: brown;
+        }
+
+        ul li a{ /* ul içindeki tüm li lerin içindeki a lar*/
+            text-decoration: none;/* altı çizgili olmasın*/
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; /* yazı kalınlığı*/
+        }
+        
+        ul li{
+            /*li ler block element yanyana gelebilmesi için inline olması lazım, inline da genişlik verilmez*/
+            display: inline-block; /* yatay memü*/
+            width: 100px; /* yatay memü*/
+            /*background-color: brown;*/
+            padding: 15px;
+            margin-left: -30px;
+            margin-right: 15px;/*yatay menü*/
+
+        }
+
+        ul li:hover{
+            background-color: red;
+            transition: 0.5s; /*üzerinde geçiş süresi*/
+        }
+
+        ul li a:hover{
+            color: black;
+        }
+
+        i{
+            padding-right: 10px;
+            color: #fff; /* iconların rengini istersen değiştir*/
+        }
+
+        #news-content{
+            position: absolute; /*akıştan bağımsız hale getir, bulunmuş olduğu konumdan bağımsız hale getirip istediğimiz her yere getirmek için*/
+            z-index: 1;/* üste kalması için*/
+            display: none;/* görünümünü kaybet*/
+            margin-top: 15px; /*divin konumu*/
+            margin-left: -15px;
+            width: 100px;/*divin genişliği*/
+        }
+
+        #news-li:hover #news-content{
+            display: block;
+        }
+
+        #news2-content{
+            position: absolute;
+            z-index: 1;
+            display: none; /*ilk başta görünme news2 nin üstüne geldiğinde görün*/
+            margin-left: 115px; /*boşluk bırakır*/
+            margin-top: -33px;
+            width: 100px;
+        }
+        #news2-li:hover #news2-content{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="a"><i class="fa-solid fa-house-user"></i>Home</a></li>
+        <li id="news-li">
+            <a href="a"><i class="fa-solid fa-newspaper"></i>News</a>
+            <div id="news-content">
+                <ul>
+                    <li style="display: block;"><a href="a">News 1</a></li>
+                    <li style="display: block;" id="news2-li"><a href="a">News 2</a>
+                        <div id="news2-content">
+                            <ul>
+                                <li><a href="a">Detay 1</a></li>
+                                <li><a href="a">Detay 2</a></li>
+                                <li><a href="a">Detay 3</a></li>
+                                <li><a href="a">Detay 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li style="display: block;"><a href="a">News 3</a></li>
+                    <li style="display: block;"><a href="a">News 4</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="a"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+        <li><a href="a"><i class="fa-solid fa-address-card"></i>About</a></li>
+    </ul>
+</body>
+</html>
